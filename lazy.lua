@@ -11,20 +11,6 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
-    {
-      "stevearc/conform.nvim",
-      opts = {
-        formatters = {
-          stylua = {
-            prepend_args = { "--column-width", "88" },
-          },
-          black = {
-            prepend_args = { "--line-length", "88" },
-          },
-          -- Configure other formatters here
-        },
-      },
-    },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
